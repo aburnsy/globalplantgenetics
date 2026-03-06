@@ -51,6 +51,7 @@ module.exports = function(eleventyConfig) {
       output: "dist",
       includes: "_includes"
     },
+    pathPrefix: "/globalplantgenetics/",
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk"
   };
