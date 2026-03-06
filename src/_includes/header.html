@@ -2,31 +2,31 @@
 <nav class="nav">
     <div class="nav-container">
         <div class="nav-logo">
-            <a href="/" class="logo-link">
+            <a href="{{ '/' | url }}" class="logo-link">
                 <span class="logo-text">Global Plant Genetics</span>
             </a>
         </div>
         <div class="nav-links">
             <div class="nav-dropdown">
-                <a href="/crops/" class="nav-link nav-dropdown-trigger">
+                <a href="{{ '/crops/' | url }}" class="nav-link nav-dropdown-trigger">
                     Crops
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
                         <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <div class="nav-dropdown-menu">
-                    <a href="/crops/strawberries/" class="nav-dropdown-item">🍓 Strawberries</a>
-                    <a href="/crops/blueberries/" class="nav-dropdown-item">🫐 Blueberries</a>
-                    <a href="/crops/raspberries/" class="nav-dropdown-item">🍇 Raspberries</a>
-                    <a href="/crops/blackberries/" class="nav-dropdown-item">🍇 Blackberries</a>
-                    <a href="/crops/asparagus/" class="nav-dropdown-item">🌿 Asparagus</a>
-                    <a href="/crops/grapes/" class="nav-dropdown-item">🍇 Grapes</a>
-                    <a href="/crops/nuts/" class="nav-dropdown-item">🌰 Nuts</a>
+                    <a href="{{ '/crops/strawberries/' | url }}" class="nav-dropdown-item">🍓 Strawberries</a>
+                    <a href="{{ '/crops/blueberries/' | url }}" class="nav-dropdown-item">🫐 Blueberries</a>
+                    <a href="{{ '/crops/raspberries/' | url }}" class="nav-dropdown-item">🍇 Raspberries</a>
+                    <a href="{{ '/crops/blackberries/' | url }}" class="nav-dropdown-item">🍇 Blackberries</a>
+                    <a href="{{ '/crops/asparagus/' | url }}" class="nav-dropdown-item">🌿 Asparagus</a>
+                    <a href="{{ '/crops/grapes/' | url }}" class="nav-dropdown-item">🍇 Grapes</a>
+                    <a href="{{ '/crops/nuts/' | url }}" class="nav-dropdown-item">🌰 Nuts</a>
                 </div>
             </div>
-            <a href="/about/intellectual-property/" class="nav-link">IP & Services</a>
-            <a href="/about/team/" class="nav-link">Team</a>
-            <a href="/news/" class="nav-link">News</a>
+            <a href="{{ '/about/intellectual-property/' | url }}" class="nav-link">IP & Services</a>
+            <a href="{{ '/about/team/' | url }}" class="nav-link">Team</a>
+            <a href="{{ '/news/' | url }}" class="nav-link">News</a>
             <a href="https://www.youtube.com/c/GlobalPlantGenetics" target="_blank" class="nav-link nav-link-youtube">
                 <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.582 2.186c-.23-.86-.908-1.538-1.768-1.768C16.254 0 10 0 10 0S3.746 0 2.186.418c-.86.23-1.538.908-1.768 1.768C0 3.746 0 7 0 7s0 3.254.418 4.814c.23.86.908 1.538 1.768 1.768C3.746 14 10 14 10 14s6.254 0 7.814-.418c.86-.23 1.538-.908 1.768-1.768C20 10.254 20 7 20 7s0-3.254-.418-4.814z" fill="currentColor"/>
@@ -34,7 +34,7 @@
                 </svg>
                 YouTube
             </a>
-            <a href="/contact/" class="nav-link nav-cta">Contact</a>
+            <a href="{{ '/contact/' | url }}" class="nav-link nav-cta">Contact</a>
         </div>
         <button class="nav-toggle" aria-label="Toggle navigation">
             <span></span>

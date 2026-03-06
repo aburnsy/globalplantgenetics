@@ -19,7 +19,7 @@ description: Get in touch with Global Plant Genetics. Contact our team to learn 
 <nav aria-label="Breadcrumb" style="padding: 1rem 0; background: #f8f8f8;">
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
         <ol style="display: flex; gap: 0.5rem; list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: #666;">
-            <li><a href="/" style="color: #1a5f3f; text-decoration: none;">Home</a></li>
+            <li><a href="{{ '/' | url }}" style="color: #1a5f3f; text-decoration: none;">Home</a></li>
             <li aria-hidden="true">/</li>
             <li aria-current="page" style="color: #333;">Contact</li>
         </ol>
@@ -118,7 +118,7 @@ description: Get in touch with Global Plant Genetics. Contact our team to learn 
 
                     <div style="display: flex; align-items: start; gap: 0.75rem;">
                         <input type="checkbox" id="gdpr" name="gdpr" required style="margin-top: 0.25rem;">
-                        <label for="gdpr" style="font-size: 0.9rem; color: #666; line-height: 1.5;">I agree to receive communications from Global Plant Genetics and understand my data will be processed according to the <a href="/privacy-policy/" style="color: #1a5f3f; text-decoration: underline;">Privacy Policy</a>. *</label>
+                        <label for="gdpr" style="font-size: 0.9rem; color: #666; line-height: 1.5;">I agree to receive communications from Global Plant Genetics and understand my data will be processed according to the <a href="{{ '/privacy-policy/' | url }}" style="color: #1a5f3f; text-decoration: underline;">Privacy Policy</a>. *</label>
                     </div>
 
                     <button type="submit" style="padding: 1rem 2.5rem; background: var(--gradient-primary); color: white; border: none; border-radius: 50px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; font-family: inherit;">Send Message</button>
