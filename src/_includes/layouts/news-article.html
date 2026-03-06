@@ -2,6 +2,77 @@
 layout: layouts/base.html
 ---
 
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.globalplantgenetics.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "News",
+      "item": "https://www.globalplantgenetics.com/news/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ title }}",
+      "item": "https://www.globalplantgenetics.com{{ page.url }}"
+    }
+  ]
+}
+</script>
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title }}",
+  "description": "{{ excerpt or description }}",
+  {% if image %}"image": "{{ image }}",{% endif %}
+  "datePublished": "{{ date | isoDate }}",
+  "dateModified": "{{ date | isoDate }}",
+  {% if author %}"author": {
+    "@type": "Person",
+    "name": "{{ author }}"
+  },{% endif %}
+  "publisher": {
+    "@type": "Organization",
+    "name": "Global Plant Genetics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.globalplantgenetics.com/images/logo.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.globalplantgenetics.com{{ page.url }}"
+  }{% if category %},
+  "articleSection": "{{ category }}"{% endif %}
+}
+</script>
+
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" style="padding: 1rem 0; background: #f8f8f8;">
+    <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 2rem;">
+        <ol style="display: flex; gap: 0.5rem; list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: #666;">
+            <li><a href="/" style="color: #1a5f3f; text-decoration: none;">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="/news/" style="color: #1a5f3f; text-decoration: none;">News</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" style="color: #333;">{{ title }}</li>
+        </ol>
+    </div>
+</nav>
+
 <!-- Article Hero -->
 <section style="padding: 8rem 0 3rem; background: var(--gradient-primary);">
     <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 2rem;">
@@ -33,7 +104,7 @@ layout: layouts/base.html
 
         {% if image %}
         <div style="margin-bottom: 3rem;">
-            <img src="{{ image }}" alt="{{ title }}" style="width: 100%; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12);">
+            <img src="{{ image }}" alt="{{ title }} - {{ excerpt or description }}" loading="lazy" style="width: 100%; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12);">
         </div>
         {% endif %}
 

@@ -3,12 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a5f3f">
+
+    <!-- Primary Meta Tags -->
     <title>{% if title %}{{ title }} | {% endif %}Global Plant Genetics</title>
+    <meta name="title" content="{% if title %}{{ title }} | {% endif %}Global Plant Genetics">
     <meta name="description" content="{% if description %}{{ description }}{% else %}Pioneering excellence in berry, asparagus, grape, and nut genetics. Partnering with elite breeders to deliver breakthrough varieties for global growers.{% endif %}">
+    <meta name="keywords" content="plant genetics, berry genetics, strawberry varieties, blueberry genetics, raspberry breeding, blackberry varieties, asparagus genetics, grape rootstocks, nut genetics, UC Davis strawberries, plant breeding, agricultural genetics, commercial varieties, IP licensing">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.globalplantgenetics.com{{ page.url }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{% if layout == 'layouts/news-article.html' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="https://www.globalplantgenetics.com{{ page.url }}">
+    <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}Global Plant Genetics">
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}Pioneering excellence in berry, asparagus, grape, and nut genetics. Partnering with elite breeders to deliver breakthrough varieties for global growers.{% endif %}">
+    <meta property="og:image" content="{% if image %}{{ image }}{% else %}https://www.globalplantgenetics.com/images/og-default.jpg{% endif %}">
+    <meta property="og:site_name" content="Global Plant Genetics">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.globalplantgenetics.com{{ page.url }}">
+    <meta name="twitter:title" content="{% if title %}{{ title }} | {% endif %}Global Plant Genetics">
+    <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}Pioneering excellence in berry, asparagus, grape, and nut genetics. Partnering with elite breeders to deliver breakthrough varieties for global growers.{% endif %}">
+    <meta name="twitter:image" content="{% if image %}{{ image }}{% else %}https://www.globalplantgenetics.com/images/og-default.jpg{% endif %}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/logo.svg">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Global Plant Genetics",
+      "url": "https://www.globalplantgenetics.com",
+      "logo": "https://www.globalplantgenetics.com/images/logo.svg",
+      "description": "Pioneering excellence in berry, asparagus, grape, and nut genetics. Partnering with elite breeders to deliver breakthrough varieties for global growers.",
+      "foundingDate": "2015",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Rupert Hargreaves"
+        },
+        {
+          "@type": "Person",
+          "name": "Jamie Petchell"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/GlobalPlantGenetics",
+        "https://www.instagram.com/globalplantgenetics",
+        "https://twitter.com/GlobalPlantGen",
+        "https://www.linkedin.com/company/global-plant-genetics",
+        "https://www.youtube.com/c/GlobalPlantGenetics"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://www.globalplantgenetics.com/contact/"
+      }
+    }
+    </script>
 </head>
 <body>
     {% include "header.html" %}
@@ -16,7 +81,7 @@
     {{ content | safe }}
 
     {% include "footer.html" %}
-    <script src="/script.js"></script>
-    <script src="/cookie-consent.js"></script>
+    <script src="/script.js" defer></script>
+    <script src="/cookie-consent.js" defer></script>
 </body>
 </html>

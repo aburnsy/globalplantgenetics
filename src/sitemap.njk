@@ -1,0 +1,31 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- for page in collections.all %}
+  {%- if not page.data.eleventyExcludeFromCollections %}
+  <url>
+    <loc>https://www.globalplantgenetics.com{{ page.url | url }}</loc>
+    <lastmod>{{ page.date | dateToRfc3339 }}</lastmod>
+    {%- if page.url == "/" %}
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    {%- elif page.url.startsWith('/crops/') and page.url != '/crops/' %}
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    {%- elif page.url == '/crops/' or page.url == '/news/' %}
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    {%- elif page.url.startsWith('/news/') %}
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    {%- else %}
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    {%- endif %}
+  </url>
+  {%- endif %}
+  {%- endfor %}
+</urlset>

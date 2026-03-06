@@ -2,6 +2,10 @@
 // GLOBAL PLANT GENETICS - INTERACTIONS
 // ==========================================
 
+// Wrap everything in an IIFE to prevent global scope pollution
+(function() {
+'use strict';
+
 // ==========================================
 // MOBILE NAVIGATION
 // ==========================================
@@ -404,3 +408,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add loaded class to body for any CSS animations that need it
     document.body.classList.add('loaded');
 });
+
+})(); // End of IIFE

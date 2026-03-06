@@ -1,9 +1,16 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 module.exports = function(eleventyConfig) {
+  // Add RSS plugin for sitemap support
+  eleventyConfig.addPlugin(pluginRss);
+
   // Copy static assets to dist/
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/script.js");
   eleventyConfig.addPassthroughCopy("src/cookie-consent.js");
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   // Create news collection (sorted by date, newest first)
   eleventyConfig.addCollection("news", function(collection) {
