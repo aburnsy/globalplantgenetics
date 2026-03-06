@@ -1,0 +1,114 @@
+---
+layout: layouts/base.html
+---
+
+<!-- Article Hero -->
+<section style="padding: 8rem 0 3rem; background: var(--gradient-primary);">
+    <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 2rem;">
+        <div style="text-align: center;">
+            {% if category %}
+            <span style="display: inline-block; padding: 0.5rem 1rem; background: rgba(255,255,255,0.2); border-radius: 50px; color: white; font-size: 0.9rem; font-weight: 600; margin-bottom: 1rem;">{{ category }}</span>
+            {% endif %}
+            <h1 style="font-family: var(--font-display); font-size: 3rem; color: white; margin-bottom: 1rem;">{{ title }}</h1>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; color: rgba(255,255,255,0.9); font-size: 0.95rem;">
+                {% if author %}
+                <span>By {{ author }}</span>
+                {% endif %}
+                {% if date %}
+                <span>•</span>
+                <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+                {% endif %}
+                {% if crop %}
+                <span>•</span>
+                <span>{{ crop }}</span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Article Content -->
+<article style="padding: 4rem 0;">
+    <div class="container" style="max-width: 800px; margin: 0 auto; padding: 0 2rem;">
+
+        {% if image %}
+        <div style="margin-bottom: 3rem;">
+            <img src="{{ image }}" alt="{{ title }}" style="width: 100%; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12);">
+        </div>
+        {% endif %}
+
+        <div class="article-content" style="font-size: 1.1rem; line-height: 1.8; color: #333;">
+            {{ content | safe }}
+        </div>
+
+        <!-- Article Footer -->
+        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e0e0e0;">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                <span style="font-weight: 600; color: #666;">Share:</span>
+                <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ page.url | urlencode }}" target="_blank" style="color: #1DA1F2; text-decoration: none;">Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | urlencode }}" target="_blank" style="color: #0077b5; text-decoration: none;">LinkedIn</a>
+            </div>
+
+            <div style="background: rgba(26, 95, 63, 0.05); border-radius: 12px; padding: 2rem; text-align: center;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Interested in Learning More?</h3>
+                <p style="color: #666; margin-bottom: 1.5rem;">Contact our team to discuss licensing opportunities and variety trials.</p>
+                <a href="/contact.html" style="display: inline-block; padding: 0.875rem 2rem; background: var(--gradient-primary); color: white; border-radius: 50px; font-weight: 600; text-decoration: none;">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</article>
+
+<style>
+.article-content h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: #1a5f3f;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-content h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: #2d7a4f;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.article-content p {
+    margin-bottom: 1.5rem;
+}
+
+.article-content ul, .article-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+}
+
+.article-content a {
+    color: #1a5f3f;
+    text-decoration: underline;
+}
+
+.article-content a:hover {
+    color: #2d7a4f;
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.article-content blockquote {
+    border-left: 4px solid #1a5f3f;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #555;
+}
+</style>

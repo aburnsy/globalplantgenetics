@@ -1,0 +1,235 @@
+---
+layout: layouts/base.html
+title: Contact Us
+description: Get in touch with Global Plant Genetics. Contact our team to learn about licensing opportunities, variety trials, and breeding partnerships.
+---
+
+<!-- Hero Section -->
+<section style="padding: 8rem 0 4rem; background: var(--gradient-primary);">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+        <h1 style="font-family: var(--font-display); font-size: 3.5rem; color: white; margin-bottom: 1rem; text-align: center;">Get in Touch</h1>
+        <p style="font-size: 1.3rem; color: rgba(255,255,255,0.9); text-align: center; max-width: 800px; margin: 0 auto;">Contact our team to explore partnership opportunities and discover how our elite varieties can transform your operation.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section style="padding: 6rem 0;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+
+            <!-- Contact Form -->
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 2rem;">Send Us a Message</h2>
+
+                <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div>
+                            <label for="firstName" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 0.875rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s;">
+                        </div>
+                        <div>
+                            <label for="lastName" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required style="width: 100%; padding: 0.875rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s;">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Email Address *</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.875rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s;">
+                    </div>
+
+                    <div>
+                        <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Company</label>
+                        <input type="text" id="company" name="company" style="width: 100%; padding: 0.875rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s;">
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div>
+                            <label for="country" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Country *</label>
+                            <select id="country" name="country" required style="width: 100%; padding: 0.875rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; background: white; transition: border-color 0.3s;">
+                                <option value="">Select a country</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="type" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">I am a *</label>
+                            <select id="type" name="type" required style="width: 100%; padding: 0.875rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; background: white; transition: border-color 0.3s;">
+                                <option value="">Select type</option>
+                                <option value="Grower">Grower</option>
+                                <option value="Breeder">Breeder</option>
+                                <option value="Distributor">Distributor</option>
+                                <option value="Researcher">Researcher</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="crop" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Crop Interest *</label>
+                        <select id="crop" name="crop" required style="width: 100%; padding: 0.875rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; background: white; transition: border-color 0.3s;">
+                            <option value="">Select a crop</option>
+                            <option value="Strawberries">Strawberries</option>
+                            <option value="Blueberries">Blueberries</option>
+                            <option value="Raspberries">Raspberries</option>
+                            <option value="Blackberries">Blackberries</option>
+                            <option value="Asparagus">Asparagus</option>
+                            <option value="Grapes">Grapes</option>
+                            <option value="Nuts">Nuts</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Message *</label>
+                        <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 0.875rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; resize: vertical; transition: border-color 0.3s;"></textarea>
+                    </div>
+
+                    <div style="display: flex; align-items: start; gap: 0.75rem;">
+                        <input type="checkbox" id="gdpr" name="gdpr" required style="margin-top: 0.25rem;">
+                        <label for="gdpr" style="font-size: 0.9rem; color: #666; line-height: 1.5;">I agree to receive communications from Global Plant Genetics and understand my data will be processed according to the <a href="/privacy-policy.html" style="color: #1a5f3f; text-decoration: underline;">Privacy Policy</a>. *</label>
+                    </div>
+
+                    <button type="submit" style="padding: 1rem 2.5rem; background: var(--gradient-primary); color: white; border: none; border-radius: 50px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; font-family: inherit;">Send Message</button>
+
+                    <div id="form-status" style="display: none; padding: 1rem; border-radius: 8px; font-weight: 600;"></div>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 2rem;">Contact Information</h2>
+
+                <div style="background: rgba(255,255,255,0.7); backdrop-filter: blur(20px); border-radius: 20px; padding: 2.5rem; border: 1px solid rgba(0,0,0,0.08); margin-bottom: 2rem;">
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: #1a5f3f;">📧 Email</h3>
+                        <a href="mailto:info@globalplantgenetics.com" style="color: #333; text-decoration: none; font-size: 1.1rem;">info@globalplantgenetics.com</a>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: #1a5f3f;">📍 Address</h3>
+                        <p style="color: #555; line-height: 1.6; margin: 0;">
+                            Global Plant Genetics Limited<br>
+                            PO Box 61<br>
+                            Hunstanton<br>
+                            United Kingdom<br>
+                            PE36 9BF
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: #1a5f3f;">🏢 Company Registration</h3>
+                        <p style="color: #555; line-height: 1.6; margin: 0;">
+                            Registered in England & Wales<br>
+                            Company No: 09610811
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.7); backdrop-filter: blur(20px); border-radius: 20px; padding: 2.5rem; border: 1px solid rgba(0,0,0,0.08);">
+                    <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Business Hours</h3>
+                    <p style="color: #555; line-height: 1.8; margin: 0;">
+                        Monday - Friday: 9:00 AM - 5:00 PM GMT<br>
+                        Weekend: Closed
+                    </p>
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 1rem; font-style: italic;">
+                        We typically respond to inquiries within 1-2 business days.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Form styling enhancements */
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #1a5f3f;
+    box-shadow: 0 0 0 3px rgba(26, 95, 63, 0.1);
+}
+
+#contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 95, 63, 0.3);
+}
+
+#contact-form button:active {
+    transform: translateY(0);
+}
+
+.form-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 968px) {
+    section > div > div {
+        grid-template-columns: 1fr !important;
+    }
+
+    #contact-form > div:first-child {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
+
+<script>
+// Form submission handling
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const statusDiv = document.getElementById('form-status');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    // Disable submit button
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+
+    try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            statusDiv.textContent = '✅ Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+            statusDiv.className = 'form-success';
+            statusDiv.style.display = 'block';
+            form.reset();
+        } else {
+            throw new Error('Form submission failed');
+        }
+    } catch (error) {
+        statusDiv.textContent = '❌ Oops! There was a problem sending your message. Please try again or email us directly at info@globalplantgenetics.com';
+        statusDiv.className = 'form-error';
+        statusDiv.style.display = 'block';
+    } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Message';
+    }
+});
+</script>

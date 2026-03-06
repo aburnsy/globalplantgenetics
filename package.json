@@ -1,0 +1,24 @@
+{
+  "name": "globalplantgenetics",
+  "version": "1.0.0",
+  "description": "Global Plant Genetics Website",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "clean": "rm -rf dist",
+    "deploy": "npm run build && bash deploy.sh"
+  },
+  "keywords": [
+    "plant",
+    "genetics",
+    "breeding",
+    "horticulture"
+  ],
+  "author": "Global Plant Genetics",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "playwright": "^1.58.2",
+    "vanilla-cookieconsent": "^3.0.0"
+  }
+}
