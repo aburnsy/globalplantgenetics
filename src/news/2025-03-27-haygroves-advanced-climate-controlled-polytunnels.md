@@ -18,6 +18,6 @@ Haygrove’s mechanised technologies empower growers to manage the climate effec
 
 Additionally, by automating climate adjustments, growers can significantly reduce manual labour costs. Automated venting maintains stable conditions without the need for constant human intervention. Furthermore, the ability to close tunnels during rainfall not only protects plants but also facilitates the capture of high-quality rainwater for sustainable irrigation.
 
-While precise climate control is standard practice in glasshouse propagation, Haygrove’s innovative structures deliver similar benefits at a fraction of the capital investment, making advanced growing technology accessible to growers looking for a quicker return on investment.
+While precise climate control is standard practice in glasshouse propagation, Haygrove's innovative structures deliver similar benefits at a fraction of the capital investment, making advanced growing technology accessible to growers looking for a quicker return on investment.
 
-https://www.haygrove.com/
+**Learn more:** [Visit Haygrove](https://www.haygrove.com/)

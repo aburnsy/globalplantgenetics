@@ -16,14 +16,14 @@ Under a new collaboration, SynergiaBIO will now play an active co-development ro
 
 Rolando Garcia, Owner of SynergiaBIO, commented:
 
-“Our experience introducing premium Rubus varieties has shown how important structured development and strong technical support are for growers. This next phase allows us to build longer-term genetic programmes that position South and Central American producers at the forefront of berry innovation, working closely with world-class breeding partners”
+> "Our experience introducing premium Rubus varieties has shown how important structured development and strong technical support are for growers. This next phase allows us to build longer-term genetic programmes that position South and Central American producers at the forefront of berry innovation, working closely with world-class breeding partners"
 
 Jamie Petchell, Co-Founder and Director of GPG, added:
 
-“Latin America continues to evolve as a highly strategic berry region. By strengthening our partnership with SynergiaBIO and extending our work with James Hutton Institute genetics, we are ensuring that new raspberry and blackberry cultivars are carefully selected, locally adapted and responsibly scaled for long-term commercial success.”
+> "Latin America continues to evolve as a highly strategic berry region. By strengthening our partnership with SynergiaBIO and extending our work with James Hutton Institute genetics, we are ensuring that new raspberry and blackberry cultivars are carefully selected, locally adapted and responsibly scaled for long-term commercial success."
 
-Coordinated trial programmes are expected to commence shortly, reinforcing the partners’ shared commitment to intellectual property integrity, disciplined variety rollout and sustainable growth across the Latin American berry sector.
+Coordinated trial programmes are expected to commence shortly, reinforcing the partners' shared commitment to intellectual property integrity, disciplined variety rollout and sustainable growth across the Latin American berry sector.
 
-https://www.synergiabio.com/
-
-https://www.hutton.ac.uk/
+**Learn more:**
+- [SynergiaBIO](https://www.synergiabio.com/)
+- [The James Hutton Institute](https://www.hutton.ac.uk/)

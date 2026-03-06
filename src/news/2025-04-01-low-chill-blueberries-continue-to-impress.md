@@ -20,4 +20,4 @@ Gladiator, also adapted to evergreen harvesting in hot climates, is best-known f
 
 We look forward to updating you further as the fruiting season transitions from Tropical Blue into both Maverick and Gladiator.
 
-https://youtube.com/globalplantgenetics
+**Watch more:** [Global Plant Genetics on YouTube](https://youtube.com/globalplantgenetics)

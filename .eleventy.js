@@ -10,7 +10,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/cookie-consent.js");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+
+  // Copy all favicon files
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("src/favicon.svg");
+  eleventyConfig.addPassthroughCopy("src/favicon-96x96.png");
+  eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
+  eleventyConfig.addPassthroughCopy("src/web-app-manifest-192x192.png");
+  eleventyConfig.addPassthroughCopy("src/web-app-manifest-512x512.png");
+  eleventyConfig.addPassthroughCopy("src/site.webmanifest");
 
   // Create news collection (sorted by date, newest first)
   eleventyConfig.addCollection("news", function(collection) {

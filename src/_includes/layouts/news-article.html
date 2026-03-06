@@ -123,7 +123,7 @@ layout: layouts/base.html
             <div style="background: rgba(26, 95, 63, 0.05); border-radius: 12px; padding: 2rem; text-align: center;">
                 <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Interested in Learning More?</h3>
                 <p style="color: #666; margin-bottom: 1.5rem;">Contact our team to discuss licensing opportunities and variety trials.</p>
-                <a href="/contact.html" style="display: inline-block; padding: 0.875rem 2rem; background: var(--gradient-primary); color: white; border-radius: 50px; font-weight: 600; text-decoration: none;">Get in Touch</a>
+                <a href="/contact/" style="display: inline-block; padding: 0.875rem 2rem; background: var(--gradient-primary); color: white; border-radius: 50px; font-weight: 600; text-decoration: none;">Get in Touch</a>
             </div>
         </div>
     </div>
@@ -161,11 +161,17 @@ layout: layouts/base.html
 
 .article-content a {
     color: #1a5f3f;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 2px solid #1a5f3f;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 .article-content a:hover {
     color: #2d7a4f;
+    border-bottom-color: #2d7a4f;
+    background: rgba(26, 95, 63, 0.05);
 }
 
 .article-content img {
@@ -176,10 +182,37 @@ layout: layouts/base.html
 }
 
 .article-content blockquote {
-    border-left: 4px solid #1a5f3f;
-    padding-left: 1.5rem;
-    margin: 2rem 0;
+    position: relative;
+    background: linear-gradient(135deg, rgba(26, 95, 63, 0.03) 0%, rgba(45, 122, 79, 0.05) 100%);
+    border-left: 5px solid #1a5f3f;
+    border-radius: 0 12px 12px 0;
+    padding: 2rem 2rem 2rem 3rem;
+    margin: 3rem 0;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    line-height: 1.7;
     font-style: italic;
-    color: #555;
+    color: #2d4a3f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.article-content blockquote::before {
+    content: '\201C';
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 3.5rem;
+    color: #1a5f3f;
+    opacity: 0.2;
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.article-content blockquote p {
+    margin-bottom: 0.5rem;
+}
+
+.article-content blockquote p:last-child {
+    margin-bottom: 0;
 }
 </style>
