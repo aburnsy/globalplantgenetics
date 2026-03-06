@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Global Plant Genetics Website",
   "scripts": {
-    "build": "eleventy",
-    "dev": "eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve",
     "clean": "rm -rf dist",
     "deploy": "npm run build && bash deploy.sh"
   },
